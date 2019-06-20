@@ -28,7 +28,7 @@
 
             <TextView
                 android:id="@+id/feedbackQuestionTV"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:autoText="true"
@@ -36,6 +36,12 @@
 
                 android:text="Overall view of the Training Program"
                 android:textSize="19sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedbackOtherOptionCB"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
@@ -58,7 +64,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/my_button_bg"
                 android:text="Very Useful"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                />
 
             <Button
                 android:id="@+id/feedbackAnswerBtn2"
@@ -81,6 +88,27 @@
                 android:textAllCaps="false" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedbackOtherAnswerLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackQuestionLL"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedbackOtherAnswerEditText"
+                android:hint="Give your other feedback"                />
+
+        </LinearLayout>
+
 
         <!--<View
             android:layout_width="match_parent"

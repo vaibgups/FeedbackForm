@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         questionBeamList.add(questionBeam7);
         questionBeamList.add(questionBeam8);
         questionBeamList.add(questionBeam9);
-        questionBeamList.add(questionBeam9);
+        questionBeamList.add(questionBeam10);
 
 
         recycler.setHasFixedSize(true);

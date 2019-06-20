@@ -11,6 +11,8 @@ public class QuestionBeam {
     private String answer3;
     private boolean isOtherReason;
     private String otherReason;
+    private boolean isOptionSelected;
+    private int buttonId;
 
     public QuestionBeam(String questionType, String questionId, String questionS_No, String question, String answer1, String answer2, String answer3) {
         this.questionType = questionType;
@@ -65,5 +67,21 @@ public class QuestionBeam {
 
     public void setOtherReason(String otherReason) {
         this.otherReason = otherReason;
+    }
+
+    public boolean isOptionSelected() {
+        return isOptionSelected;
+    }
+
+    public void setOptionSelected(boolean optionSelected) {
+        isOptionSelected = optionSelected;
+    }
+
+    public int getButtonId() {
+        return buttonId;
+    }
+
+    public void setButtonId(int buttonId) {
+        this.buttonId = buttonId;
     }
 }
